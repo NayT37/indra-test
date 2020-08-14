@@ -31,3 +31,6 @@
 
 # Ignore Node Modules
 /web/node_modules
+
+# Ignore css.map
+/web/themes/indra/css/style.css.map
