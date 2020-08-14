@@ -1,0 +1,20 @@
+uuid: f5c99fb8-0516-4803-b8fd-953bccac4d2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - indra
+id: horizontalmenu
+theme: indra
+region: header
+weight: -7
+provider: null
+plugin: responsive_menu_horizontal_menu
+settings:
+  id: responsive_menu_horizontal_menu
+  label: 'Horizontal menu'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }

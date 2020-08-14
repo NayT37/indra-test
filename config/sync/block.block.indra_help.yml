@@ -1,0 +1,22 @@
+uuid: cc0bed3c-81a0-4929-bbbc-1e6667ad6fb8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - indra
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: indra_help
+theme: indra
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

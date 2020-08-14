@@ -1,0 +1,22 @@
+uuid: 88d0cefb-6fa8-445a-bf12-0d58a0736089
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - indra
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: indra_powered
+theme: indra
+region: header
+weight: -1
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
