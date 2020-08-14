@@ -28,3 +28,9 @@
 # Ignore Apache Logs
 /web/access.log
 /web/error.log
+
+# Ignore Node Modules
+/web/node_modules
+
+# Ignore css.map
+/web/themes/indra/css/style.css.map

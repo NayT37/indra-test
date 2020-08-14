@@ -1,0 +1,22 @@
+uuid: b8502adc-af41-43b1-9e61-463b30e6588b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - indra
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: indra_messages
+theme: indra
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+global-scripts:
+  js:
+    'js/age-validation.js': {}
+  dependencies:
+    - core/jquery
