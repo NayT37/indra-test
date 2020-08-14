@@ -24,3 +24,7 @@
 /.env
 /.editorconfig
 /.gitattributes
+
+# Ignore Apache Logs
+/web/access.log
+/web/error.log
