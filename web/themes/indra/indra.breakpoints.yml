@@ -1,0 +1,24 @@
+indra.sm:
+  label: sm
+  mediaQuery: '(min-width: 576px)'
+  weight: 4
+  multipliers:
+    - 1x
+indra.md:
+  label: md
+  mediaQuery: '(min-width: 768px)'
+  weight: 3
+  multipliers:
+    - 1x
+indra.lg:
+  label: lg
+  mediaQuery: '(min-width: 992px)'
+  weight: 2
+  multipliers:
+    - 1x
+indra.xl:
+  label: lg
+  mediaQuery: '(min-width: 1200px)'
+  weight: 1
+  multipliers:
+    - 1x
