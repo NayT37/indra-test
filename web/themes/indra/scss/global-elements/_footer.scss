@@ -1,0 +1,23 @@
+.ind-footer {
+  display: flex;
+  background-color: $black-main;
+
+  > div {
+    width: 100%;
+  }
+
+  .region-footer {
+    @extend .ind-container;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.ind-footer__prefix {
+}
+.ind-footer__content {
+}
+.ind-footer__sufix {
+}

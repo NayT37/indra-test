@@ -9,7 +9,7 @@ dependencies:
 id: responsivemenumobileicon
 theme: indra
 region: header
-weight: -6
+weight: 2
 provider: null
 plugin: responsive_menu_toggle
 settings:

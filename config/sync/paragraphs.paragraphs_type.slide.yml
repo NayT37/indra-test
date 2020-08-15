@@ -1,0 +1,10 @@
+uuid: 7c7f2ef9-40e5-47a9-8a44-a2b0e45bea56
+langcode: en
+status: true
+dependencies: {  }
+id: slide
+label: Slide
+icon_uuid: null
+icon_default: null
+description: 'Individual slide for paragraph slider'
+behavior_plugins: {  }

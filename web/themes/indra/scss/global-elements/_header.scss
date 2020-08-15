@@ -1,0 +1,8 @@
+.ind-head {
+  .region-header {
+    @extend .ind-container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
