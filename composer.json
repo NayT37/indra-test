@@ -24,7 +24,10 @@
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^4.0",
         "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.8",
         "drupal/responsive_menu": "^4.3",
+        "drupal/twig_tweak": "^2.6",
+        "drupal/webform": "^5.19",
         "drush/drush": "^10.3"
     },
     "require-dev": {
