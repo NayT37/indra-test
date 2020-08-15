@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+set classes = 'region region-footer'
+%}
+
+{% if content %}
+  <div class="{{classes}}">
+    <div class="ind-footer__prefix">
+      <img src="https://www.mikesperu.com.pe/themes/custom/mikes/dist/img/mikes-icon.png" alt="">
+      <div>
+        <p>El exceso de alcohol es perjudicial para la salud</p>
+        <p>No comparta este contenido con menores de edad</p>
+      </div>
+    </div>
+    <div class="ind-footer__content">
+      {{ content }}
+    </div>
+    <div class="ind-footer__sufix">
+      <img src="https://www.mikesperu.com.pe/sites/default/files/2019-12/facebook-logo.png" alt="">
+      <img src="https://www.mikesperu.com.pe/sites/default/files/2019-12/instagram.png" alt="">
+      <img src="https://www.mikesperu.com.pe/sites/default/files/2019-12/youtube-v1.png" alt="">
+    </div>
+  </div>
+{% endif %}
