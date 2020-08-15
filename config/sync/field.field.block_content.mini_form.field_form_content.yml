@@ -1,0 +1,40 @@
+uuid: e0516391-790b-4a01-b2bf-d04d3f62bf39
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mini_form
+    - field.storage.block_content.field_form_content
+    - paragraphs.paragraphs_type.number_input
+  module:
+    - entity_reference_revisions
+id: block_content.mini_form.field_form_content
+field_name: field_form_content
+entity_type: block_content
+bundle: mini_form
+label: 'Form Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      number_input: number_input
+    target_bundles_drag_drop:
+      input_box:
+        weight: 5
+        enabled: false
+      number_input:
+        enabled: true
+        weight: 6
+      slide:
+        weight: 7
+        enabled: false
+      slider:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

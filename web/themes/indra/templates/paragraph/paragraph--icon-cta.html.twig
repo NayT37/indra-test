@@ -1,0 +1,8 @@
+{% set image = content.field_image['#items'].entity.uri.value %}
+
+<div class="mini-form__cta">
+  {% if image != null %}
+    <img class="" src="{{ file_url(image) }}">
+  {% endif %}
+  <p>{{content.field_label.0}}</p>
+</div>

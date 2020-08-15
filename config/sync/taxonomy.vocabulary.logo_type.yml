@@ -1,0 +1,8 @@
+uuid: ae3148f8-1592-4aa6-b1e9-20aae78f5153
+langcode: en
+status: true
+dependencies: {  }
+name: 'Logo Type'
+vid: logo_type
+description: ''
+weight: 0

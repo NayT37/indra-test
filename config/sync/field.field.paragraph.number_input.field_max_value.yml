@@ -1,0 +1,23 @@
+uuid: afa3996e-1c7f-4580-8bc5-67349a62a075
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_max_value
+    - paragraphs.paragraphs_type.number_input
+id: paragraph.number_input.field_max_value
+field_name: field_max_value
+entity_type: paragraph
+bundle: number_input
+label: 'Max Value'
+description: 'Leave it empty for no Max Value'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

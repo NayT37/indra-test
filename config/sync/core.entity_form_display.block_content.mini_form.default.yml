@@ -1,0 +1,48 @@
+uuid: d7627cf5-5da3-4c19-b1d0-8eff6929afd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mini_form
+    - field.field.block_content.mini_form.field_cta
+    - field.field.block_content.mini_form.field_form_content
+  module:
+    - paragraphs
+id: block_content.mini_form.default
+targetEntityType: block_content
+bundle: mini_form
+mode: default
+content:
+  field_cta:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_form_content:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
