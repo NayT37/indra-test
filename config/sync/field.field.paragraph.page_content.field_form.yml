@@ -1,0 +1,25 @@
+uuid: 5035bd5e-cbf5-4d8e-9fef-ecae07f0fe53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_form
+    - paragraphs.paragraphs_type.page_content
+  module:
+    - webform
+id: paragraph.page_content.field_form
+field_name: field_form
+entity_type: paragraph
+bundle: page_content
+label: 'Webform Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

@@ -70,11 +70,10 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes }}>
-
+<article{{attributes}}>
   {{ title_prefix }}
   {% if not page %}
-    <h2{{ title_attributes }}>
+    <h2{{title_attributes}}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
   {% endif %}
@@ -83,15 +82,23 @@
   {% if display_submitted %}
     <footer>
       {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+      <div{{author_attributes}}>
+        {% trans %}Submitted by
+        {{ author_name }}
+        on
+        {{ date }}{% endtrans %}
         {{ metadata }}
       </div>
     </footer>
   {% endif %}
 
-  <div{{ content_attributes }}>
-    {{ content }}
+  <div{{content_attributes}}>
+    <div class="bpage__slider">
+      {{ content.field_slider }}
+    </div>
+    <div class="bpage__content ind-container">
+      {{ content.field_text_content }}
+    </div>
   </div>
 
 </article>

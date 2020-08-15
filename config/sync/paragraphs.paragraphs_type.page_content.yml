@@ -1,0 +1,10 @@
+uuid: 2d1abf30-637d-4d92-9814-0aa7f7a1fa31
+langcode: en
+status: true
+dependencies: {  }
+id: page_content
+label: 'Page Content'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
