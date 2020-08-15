@@ -1,3 +1,18 @@
 // Override bootstrap framework variables.
 // Full list of variables in [path to themes/contrib]/bootstrap4/dist/bootstrap/4.4.1/scss/_variables.scss
 // or [path to themes/contrib]/bootstrap4/scss/_theme_variables.scss.
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+// mmenu
+.mm-page {
+  background-color: transparent;
+}

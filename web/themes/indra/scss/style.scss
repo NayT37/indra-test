@@ -1,9 +1,9 @@
-// Include bootstrap variables definitions overrides.
-@import 'overrides/variables';
-
 // Include parent theme with all things Bootstrap for full override.
 // Relative path to this styles.scss file.
 @import "../../contrib/bootstrap4/scss/style";
+
+// Include bootstrap variables definitions overrides.
+@import 'overrides/variables';
 
 // Include custom sub theme.
 @import 'custom/variables';
@@ -15,3 +15,9 @@
 // Global Elements
 @import 'global-elements/header';
 @import 'global-elements/footer';
+
+// Paragraph
+@import 'paragraph/number-input';
+
+// Field
+@import 'field/mini-form';

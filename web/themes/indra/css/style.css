@@ -8605,12 +8605,27 @@ a.tabledrag-handle .handle {
   display: table-cell;
   padding-right: 1rem !important; }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+.mm-page {
+  background-color: transparent; }
+
 .ind-container, .ind-head .region-header, .ind-footer .region-footer {
   max-width: 1140px;
   margin: 0 auto; }
 
 .ind-container-fluid {
   width: 100%; }
+
+body {
+  text-transform: uppercase;
+  background-color: #ffd100; }
 
 .ind-head .region-header {
   display: -webkit-box;
@@ -8644,5 +8659,58 @@ a.tabledrag-handle .handle {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+
+.mini-form__num-inp {
+  text-align: center; }
+
+.mini-form__num-inp__inp-wrapper {
+  margin-bottom: 30px; }
+  .mini-form__num-inp__inp-wrapper input {
+    width: 90%;
+    margin: 0;
+    padding: 30px 15px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: #000000;
+    border: none;
+    font-weight: bold;
+    font-size: 2.25rem; }
+
+.mini-form__num-inp__feedback {
+  display: none;
+  color: #ff0000; }
+
+.input-error .mini-form__num-inp__feedback {
+  text-align: left;
+  display: block; }
+
+.mini-form {
+  max-width: 620px;
+  margin: 0 auto; }
+  .mini-form > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .mini-form .field--name-field-form-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .mini-form .field--name-field-form-content .field__item {
+      width: 33%; }
+  .mini-form .field--name-field-cta img {
+    width: 40px;
+    height: 40px; }
 
 /*# sourceMappingURL=style.css.map */
