@@ -2,8 +2,11 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      'https://unpkg.com/swiper/swiper-bundle.min.css': { type: external }
 global-scripts:
   js:
+    'https://unpkg.com/swiper/swiper-bundle.min.js': { type: external }
     'js/age-validation.js': {}
+    'js/slider.js': {}
   dependencies:
     - core/jquery

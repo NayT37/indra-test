@@ -1,0 +1,9 @@
+{% set image = content.field_image['#items'].entity.uri.value %}
+
+<div class="swiper-slide slider__slide">
+  <div class="slide">
+    {% if image != null %}
+      <img class="slide__img" src="{{ file_url(image) }}">
+    {% endif %}
+  </div>
+</div>
