@@ -1,0 +1,40 @@
+uuid: fffce8bc-443c-43d2-9f0f-cca5197b6858
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mini_form
+    - field.storage.block_content.field_cta
+    - paragraphs.paragraphs_type.icon_cta
+  module:
+    - entity_reference_revisions
+id: block_content.mini_form.field_cta
+field_name: field_cta
+entity_type: block_content
+bundle: mini_form
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon_cta: icon_cta
+    target_bundles_drag_drop:
+      icon_cta:
+        enabled: true
+        weight: 5
+      number_input:
+        weight: 6
+        enabled: false
+      slide:
+        weight: 7
+        enabled: false
+      slider:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

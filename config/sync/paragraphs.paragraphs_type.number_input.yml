@@ -1,0 +1,10 @@
+uuid: aefcc475-4325-4796-9e30-695cd4edf61a
+langcode: en
+status: true
+dependencies: {  }
+id: number_input
+label: 'Number Input'
+icon_uuid: null
+icon_default: null
+description: 'Number input and label'
+behavior_plugins: {  }

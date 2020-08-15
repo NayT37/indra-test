@@ -1,0 +1,10 @@
+uuid: b5c1f162-576b-4f60-83c6-5e31bd58bc35
+langcode: en
+status: true
+dependencies: {  }
+id: icon_cta
+label: 'CTA with Icon'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

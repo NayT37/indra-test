@@ -1,0 +1,39 @@
+uuid: 59918bfe-6513-47a4-a3c6-d5c962e4a86a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.number_input.field_label
+    - field.field.paragraph.number_input.field_max_value
+    - field.field.paragraph.number_input.field_min_value
+    - paragraphs.paragraphs_type.number_input
+id: paragraph.number_input.default
+targetEntityType: paragraph
+bundle: number_input
+mode: default
+content:
+  field_label:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_max_value:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_min_value:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true

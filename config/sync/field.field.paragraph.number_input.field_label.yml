@@ -1,0 +1,19 @@
+uuid: 12aa2c55-35f0-414f-96e4-34fe3357bc3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.number_input
+id: paragraph.number_input.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: number_input
+label: Label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

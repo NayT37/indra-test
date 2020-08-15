@@ -1,0 +1,8 @@
+uuid: 2f47d1eb-78e3-4f1d-b2cf-dd5bd143434f
+langcode: en
+status: true
+dependencies: {  }
+id: mini_form
+label: 'Mini Form'
+revision: 0
+description: 'Block for specific small forms'

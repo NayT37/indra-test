@@ -1,0 +1,19 @@
+uuid: a7299b13-02ad-418d-846d-075d8dfe0eae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sufix
+    - node.type.landing_page
+id: node.landing_page.field_sufix
+field_name: field_sufix
+entity_type: node
+bundle: landing_page
+label: 'Landing Sufix'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

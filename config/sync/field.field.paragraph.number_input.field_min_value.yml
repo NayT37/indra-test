@@ -1,0 +1,23 @@
+uuid: ac50ee9c-abed-40fb-b2bb-3bcb2b350920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_min_value
+    - paragraphs.paragraphs_type.number_input
+id: paragraph.number_input.field_min_value
+field_name: field_min_value
+entity_type: paragraph
+bundle: number_input
+label: 'Min Value'
+description: 'Leave it empty for no Min Value'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,28 @@
+uuid: 927a9d67-c29f-4338-be16-975b6abbf64f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mini_form
+    - field.storage.node.field_block
+    - node.type.landing_page
+id: node.landing_page.field_block
+field_name: field_block
+entity_type: node
+bundle: landing_page
+label: 'Mini Form Block Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      mini_form: mini_form
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: basic
+field_type: entity_reference

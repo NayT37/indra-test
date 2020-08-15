@@ -1,0 +1,33 @@
+uuid: 77b1f44c-9ef5-4ead-be27-b60168c4a049
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_cta.field_image
+    - field.field.paragraph.icon_cta.field_label
+    - paragraphs.paragraphs_type.icon_cta
+  module:
+    - image
+id: paragraph.icon_cta.default
+targetEntityType: paragraph
+bundle: icon_cta
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_label:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
