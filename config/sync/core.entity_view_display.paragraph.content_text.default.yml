@@ -1,0 +1,31 @@
+uuid: 94678496-f753-4f68-b8f1-133ba847df94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_text.field_title
+    - field.field.paragraph.content_text.field_wysiwyg
+    - paragraphs.paragraphs_type.content_text
+  module:
+    - text
+id: paragraph.content_text.default
+targetEntityType: paragraph
+bundle: content_text
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_wysiwyg:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

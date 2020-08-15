@@ -1,0 +1,46 @@
+uuid: 417e2a44-f4e7-433e-b6c8-550fbc6e3dd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_content
+    - paragraphs.paragraphs_type.content_text
+    - paragraphs.paragraphs_type.page_content
+  module:
+    - entity_reference_revisions
+id: paragraph.page_content.field_text_content
+field_name: field_text_content
+entity_type: paragraph
+bundle: page_content
+label: 'Text Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_text: content_text
+    target_bundles_drag_drop:
+      content_text:
+        enabled: true
+        weight: 7
+      icon_cta:
+        weight: 8
+        enabled: false
+      number_input:
+        weight: 9
+        enabled: false
+      page_content:
+        weight: 10
+        enabled: false
+      slide:
+        weight: 11
+        enabled: false
+      slider:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions
