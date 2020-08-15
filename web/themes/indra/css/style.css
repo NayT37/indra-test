@@ -8605,4 +8605,44 @@ a.tabledrag-handle .handle {
   display: table-cell;
   padding-right: 1rem !important; }
 
+.ind-container, .ind-head .region-header, .ind-footer .region-footer {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.ind-container-fluid {
+  width: 100%; }
+
+.ind-head .region-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.ind-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000; }
+  .ind-footer > div {
+    width: 100%; }
+  .ind-footer .region-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+
 /*# sourceMappingURL=style.css.map */
