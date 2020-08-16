@@ -1,0 +1,19 @@
+uuid: 3abf50a2-c679-43b3-bd20-e8f07866139c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_prefix
+    - paragraphs.paragraphs_type.section_content
+id: paragraph.section_content.field_title_prefix
+field_name: field_title_prefix
+entity_type: paragraph
+bundle: section_content
+label: 'Title Prefix'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

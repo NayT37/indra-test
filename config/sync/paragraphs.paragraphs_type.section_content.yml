@@ -1,0 +1,10 @@
+uuid: 31990c12-e408-454b-adde-b2c216a19dda
+langcode: en
+status: true
+dependencies: {  }
+id: section_content
+label: 'Section Content'
+icon_uuid: null
+icon_default: null
+description: 'Full width box content'
+behavior_plugins: {  }

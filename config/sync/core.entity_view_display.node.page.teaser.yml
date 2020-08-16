@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_content
     - field.field.node.page.field_slider
     - field.field.node.page.field_text_content
     - node.type.page
@@ -20,5 +21,6 @@ content:
     weight: 101
     region: content
 hidden:
+  field_content: true
   field_slider: true
   field_text_content: true

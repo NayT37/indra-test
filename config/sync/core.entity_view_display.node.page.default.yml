@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_content
     - field.field.node.page.field_slider
     - field.field.node.page.field_text_content
     - node.type.page
@@ -16,6 +17,15 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_slider:
     type: entity_reference_revisions_entity_view
     weight: 102
