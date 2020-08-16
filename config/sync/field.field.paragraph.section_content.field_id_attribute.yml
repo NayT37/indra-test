@@ -1,0 +1,19 @@
+uuid: d601e202-3091-4b0c-ab1d-e210805a8556
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_id_attribute
+    - paragraphs.paragraphs_type.section_content
+id: paragraph.section_content.field_id_attribute
+field_name: field_id_attribute
+entity_type: paragraph
+bundle: section_content
+label: 'ID Attribute'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

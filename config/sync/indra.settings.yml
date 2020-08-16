@@ -5,7 +5,7 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: themes/indra/logo.png
+  path: themes/indra/logo-full.png
 favicon:
   use_default: 1
 b4_top_container: 'container-fluid m-0 p-0'
