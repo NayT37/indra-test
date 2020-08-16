@@ -1,0 +1,13 @@
+{% set bg_image = content.field_image['#items'].entity.uri.value %}
+
+<div id="{{content.field_id_attribute.0}}" style="background-image: url({{ file_url(bg_image) }})">
+  <div class="ind-container">
+    {{content.field_title.0}}
+    {{content.field_title_prefix.0}}
+    {{content.field_title_suffix.0}}
+    {{content.field_subtitle.0}}
+
+    {{content.field_content.0}}
+  </div>
+
+</div>
