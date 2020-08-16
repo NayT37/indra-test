@@ -2,15 +2,14 @@
 // Relative path to this styles.scss file.
 @import "../../contrib/bootstrap4/scss/style";
 
-// Include bootstrap variables definitions overrides.
-@import 'overrides/variables';
+// Include custom misc.
+@import 'custom/misc';
 
 // Include custom sub theme.
 @import 'custom/variables';
 
-// Include custom sub theme.
-//@import 'custom/mixins/misc';
-//@import 'custom/misc';
+// Include bootstrap variables definitions overrides.
+@import 'overrides/overrides';
 
 // Global Elements
 @import 'global-elements/header';

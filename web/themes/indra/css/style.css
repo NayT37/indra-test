@@ -8605,6 +8605,67 @@ a.tabledrag-handle .handle {
   display: table-cell;
   padding-right: 1rem !important; }
 
+@font-face {
+  font-family: "formula-condensed";
+  src: url("../fonts/FormulaCondensed-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: "formula-condensed";
+  font-weight: bold;
+  src: url("../fonts/FormulaCondensed-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/FuturaMediumBT.ttf") format("truetype"); }
+
+.ind-container, .ind-head .region-header, .ind-footer .region-footer {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+h1, .h1 {
+  font-family: "formula-condensed";
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+
+h2, .h2 {
+  font-family: "formula-condensed";
+  font-size: 4.8125rem;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+
+h3, .h3 {
+  font-family: "formula-condensed";
+  font-size: 4.6875rem;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+
+h4, .h4 {
+  font-family: "formula-condensed";
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+
+h5, .h5 {
+  font-family: "formula-condensed";
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+
+h6, .h6 {
+  font-family: "formula-condensed";
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+
+.txt-default, body {
+  font-size: 1.0625rem;
+  font-family: "futura", Helvetica, Arial, sans-serif; }
+
+body {
+  text-transform: uppercase;
+  background-color: #ffd100; }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -8613,19 +8674,20 @@ input[type="number"]::-webkit-outer-spin-button {
 p {
   margin: 0; }
 
+a {
+  color: #000000; }
+  a:hover {
+    color: #ffffff; }
+
+.navbar-brand img {
+  max-width: 200px;
+  height: auto; }
+
 .mm-page {
   background-color: transparent; }
 
 .region-content {
   padding: 0; }
-
-.ind-container, .ind-head .region-header, .ind-footer .region-footer {
-  max-width: 1140px;
-  margin: 0 auto; }
-
-body {
-  text-transform: uppercase;
-  background-color: #ffd100; }
 
 .ind-head .region-header {
   display: -webkit-box;
@@ -8636,7 +8698,15 @@ body {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-top: 2rem; }
+
+.ind-head .menu-item a, .ind-head .menu-item span {
+  font-family: "formula-condensed";
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  background-color: transparent; }
 
 .ind-footer {
   display: -webkit-box;

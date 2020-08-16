@@ -1,0 +1,91 @@
+// Define new variables.
+
+/// INDEX
+//  + Functions
+//  + Font load
+//  + Extend Classes
+//    + Container
+//    + Fonts
+
+// ==========================================
+//  + Functions
+
+// Function for converting a px based font-size to rem.
+@function pxToRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+// ==========================================
+//  + Font load
+@font-face {
+  font-family: "formula-condensed";
+  src: url("../fonts/FormulaCondensed-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "formula-condensed";
+  font-weight: bold;
+  src: url("../fonts/FormulaCondensed-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/FuturaMediumBT.ttf") format("truetype");
+}
+
+// ==========================================
+//  + Extend Classes
+//    + Container
+.ind-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+//    + Fonts
+h1,
+.h1 {
+  font-family: "formula-condensed";
+  font-size: pxToRem(80px);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+h2,
+.h2 {
+  font-family: "formula-condensed";
+  font-size: pxToRem(77px);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+h3,
+.h3 {
+  font-family: "formula-condensed";
+  font-size: pxToRem(75px);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+h4,
+.h4 {
+  font-family: "formula-condensed";
+  font-size: pxToRem(72px);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+h5,
+.h5 {
+  font-family: "formula-condensed";
+  font-size: pxToRem(40px);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+h6,
+.h6 {
+  font-family: "formula-condensed";
+  font-size: pxToRem(30px);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.txt-default {
+  font-size: pxToRem(17px);
+  font-family: "futura", Helvetica, Arial, sans-serif;
+}
