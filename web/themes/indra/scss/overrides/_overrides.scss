@@ -2,6 +2,12 @@
 // Full list of variables in [path to themes/contrib]/bootstrap4/dist/bootstrap/4.4.1/scss/_variables.scss
 // or [path to themes/contrib]/bootstrap4/scss/_theme_variables.scss.
 
+body {
+  @extend .txt-default;
+  text-transform: uppercase;
+  background-color: $yellow-main;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -10,6 +16,21 @@ input[type="number"]::-webkit-outer-spin-button {
 
 p {
   margin: 0;
+}
+
+a {
+  color: $black-main;
+  &:hover {
+    color: $white-main;
+  }
+}
+
+// Navbar Branding
+.navbar-brand {
+  img {
+    max-width: 200px;
+    height: auto;
+  }
 }
 
 // mmenu
