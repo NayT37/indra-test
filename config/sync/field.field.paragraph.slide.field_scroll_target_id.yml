@@ -1,0 +1,19 @@
+uuid: 0bc9c430-249f-4881-a808-ad5d5db94a21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_scroll_target_id
+    - paragraphs.paragraphs_type.slide
+id: paragraph.slide.field_scroll_target_id
+field_name: field_scroll_target_id
+entity_type: paragraph
+bundle: slide
+label: 'Scroll Target ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

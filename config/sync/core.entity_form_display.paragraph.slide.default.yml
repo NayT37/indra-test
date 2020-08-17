@@ -3,23 +3,61 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.slide.field_cta
     - field.field.paragraph.slide.field_image
+    - field.field.paragraph.slide.field_scroll_target_id
+    - field.field.paragraph.slide.field_subtitle
+    - field.field.paragraph.slide.field_title_formatted
     - image.style.thumbnail
     - paragraphs.paragraphs_type.slide
   module:
     - image
+    - link
+    - text
 id: paragraph.slide.default
 targetEntityType: paragraph
 bundle: slide
 mode: default
 content:
+  field_cta:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_image:
-    weight: 0
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_scroll_target_id:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subtitle:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_formatted:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
 hidden:
   created: true
