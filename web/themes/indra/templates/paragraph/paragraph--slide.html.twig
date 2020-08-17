@@ -1,9 +1,36 @@
 {% set image = content.field_image['#items'].entity.uri.value %}
 
 <div class="swiper-slide slider__slide">
-  <div class="slide">
-    {% if image != null %}
-      <img class="slide__img" src="{{ file_url(image) }}">
-    {% endif %}
+  <div class="slide ind-container">
+    <div class="slide__info">
+
+      {% if content.field_title_formatted.0 != null %}
+        <h3 class="ind-format slide__info__title">
+          {{content.field_title_formatted.0}}
+        </h3>
+      {% endif %}
+
+      {% if content.field_cta.0['#url'] != null %}
+        <a class="slide__info__cta" href="{{content.field_cta.0['#url']}}">{{content.field_cta.0['#title']}}</a>
+      {% endif %}
+
+      {% if content.field_subtitle.0 != null %}
+        <p class="slide__info__sub-title">{{content.field_subtitle.0}}</p>
+      {% endif %}
+
+      {% if content.field_scroll_target_id.0 != null %}
+        <a class="slide__info__scroll" href="{{content.field_scroll_target_id.0}}">
+          <img class="slide__info__scroll__lemon" src="/themes/indra/img/lemon.png">
+          {{'Baja'|t}}
+          <img class="slide__info__scroll__arrow" src="/themes/indra/img/scroll-arrow.svg">
+        </a>
+      {% endif %}
+
+    </div>
+    <div class="slide__img-wrap">
+      {% if image != null %}
+        <img class="slide__img-wrap__img" src="{{ file_url(image) }}">
+      {% endif %}
+    </div>
   </div>
 </div>
