@@ -8686,6 +8686,19 @@ a {
 .mm-page {
   background-color: transparent; }
 
+.mm-panel {
+  padding-top: 2rem;
+  background-color: #000000; }
+
+.mm-navbar {
+  display: none; }
+
+.mm-navbar__title {
+  display: none; }
+
+.mm-listitem::after {
+  display: none; }
+
 .region-content {
   padding: 0; }
 
@@ -8701,12 +8714,21 @@ a {
           justify-content: space-between;
   padding-top: 2rem; }
 
-.ind-head .menu-item a, .ind-head .menu-item span {
+.ind-head .menu-item a {
   font-family: "formula-condensed";
   font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 1.5px;
   background-color: transparent; }
+
+.mm-menu_offcanvas .nav-item a {
+  color: #ffffff;
+  font-family: "formula-condensed";
+  font-size: 8vw;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-align: center; }
 
 .ind-footer {
   display: -webkit-box;
