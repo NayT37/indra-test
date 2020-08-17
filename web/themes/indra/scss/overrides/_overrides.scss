@@ -37,6 +37,21 @@ a {
 .mm-page {
   background-color: transparent;
 }
+.mm-panel {
+  padding-top: pxToRem(32px);
+  background-color: $black-main;
+}
+.mm-navbar {
+  display: none;
+}
+.mm-navbar__title {
+  display: none;
+}
+.mm-listitem {
+  &::after {
+    display: none;
+  }
+}
 
 // Region Content
 .region-content {
