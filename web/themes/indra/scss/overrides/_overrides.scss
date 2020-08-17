@@ -4,6 +4,7 @@
 
 body {
   @extend .txt-default;
+  color: $black-main;
   text-transform: uppercase;
   background-color: $yellow-main;
 }
@@ -23,6 +24,11 @@ a {
   &:hover {
     color: $white-main;
   }
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 // Navbar Branding
@@ -56,4 +62,17 @@ a {
 // Region Content
 .region-content {
   padding: 0;
+}
+
+// Swiper
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+
+    &-active {
+      background: $white-main;
+    }
+  }
 }

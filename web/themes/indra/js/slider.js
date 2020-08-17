@@ -22,7 +22,7 @@
                 prevEl: $swiperPrev[0],
               },
               autoplay: {
-                delay: 3500,
+                delay: 13500,
                 disableOnInteraction: false,
               },
             });

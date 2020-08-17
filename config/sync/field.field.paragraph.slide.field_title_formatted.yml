@@ -1,0 +1,21 @@
+uuid: a7d01fa0-5e6d-4a1e-8276-ca6757cda355
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_formatted
+    - paragraphs.paragraphs_type.slide
+  module:
+    - text
+id: paragraph.slide.field_title_formatted
+field_name: field_title_formatted
+entity_type: paragraph
+bundle: slide
+label: 'Title Formatted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

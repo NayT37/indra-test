@@ -1,4 +1,4 @@
-<div class="swiper-container">
+<div class="swiper-container p-slider">
   <div class="swiper-wrapper">
     {% for slide in content.field_slide['#items'] %}
       {{ drupal_entity('paragraph', slide.target_id) }}
