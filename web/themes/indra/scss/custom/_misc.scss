@@ -40,6 +40,13 @@
 .ind-container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.ind-format {
+  strong {
+    color: $white-main;
+  }
 }
 
 //    + Fonts
@@ -74,14 +81,14 @@ h4,
 h5,
 .h5 {
   font-family: "formula-condensed";
-  font-size: pxToRem(40px);
+  font-size: pxToRem(68px);
   font-weight: bold;
   letter-spacing: 1.5px;
 }
 h6,
 .h6 {
   font-family: "formula-condensed";
-  font-size: pxToRem(30px);
+  font-size: pxToRem(40px);
   font-weight: bold;
   letter-spacing: 1.5px;
 }

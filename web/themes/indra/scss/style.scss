@@ -2,11 +2,11 @@
 // Relative path to this styles.scss file.
 @import "../../contrib/bootstrap4/scss/style";
 
-// Include custom misc.
-@import 'custom/misc';
-
 // Include custom sub theme.
 @import 'custom/variables';
+
+// Include custom misc.
+@import 'custom/misc';
 
 // Include bootstrap variables definitions overrides.
 @import 'overrides/overrides';
@@ -17,6 +17,7 @@
 
 // Paragraph
 @import 'paragraph/number-input';
+@import 'paragraph/slide';
 
 // Field
 @import 'field/mini-form';

@@ -1,0 +1,132 @@
+// Slide paragraph styles.
+
+/// INDEX
+//  + General
+//  + Slide Information
+//  + Slide Image
+
+// ==========================================
+
+//  + General
+.p-slider {
+  margin-bottom: pxToRem(32px);
+}
+
+// ==========================================
+//  + Slide Information
+.slide__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.slide__info__title {
+  font-size: 15vw;
+  padding-bottom: pxToRem(16px);
+}
+.slide__info__cta {
+  display: block;
+  position: relative;
+  margin-bottom: pxToRem(32px);
+  padding: 13px 32px 10px 16px;
+  color: $white;
+  background-color: $black-main;
+
+  &::after {
+    content: "";
+    display: block;
+    border-left: solid 8px $white-main;
+    border-top: solid 8px transparent;
+    border-bottom: solid 8px transparent;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.slide__info__sub-title {
+  display: none;
+}
+.slide__info__scroll {
+  display: none;
+}
+
+// ==========================================
+//  + Slide Image
+.slide__img-wrap {
+  text-align: center;
+}
+.slide__img-wrap__img {
+  width: 80%;
+}
+
+@media (min-width: $breakpoint-medium) {
+  //  + General
+  .p-slider {
+    margin-bottom: pxToRem(48px);
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: pxToRem(50px) 0;
+  }
+
+  // ==========================================
+  //  + Slide Information
+  .slide__info {
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .slide__info__title {
+    margin-bottom: pxToRem(32px);
+    font-size: pxToRem(68px);
+    text-align: left;
+  }
+
+  .slide__info__cta {
+    margin-bottom: pxToRem(32px);
+  }
+
+  .slide__info__sub-title {
+    display: block;
+    margin-bottom: pxToRem(32px);
+    color: $white-main;
+    font-size: pxToRem(18px);
+  }
+
+  .slide__info__scroll {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    font-size: pxToRem(14px);
+    &:hover {
+      color: $black-main;
+      text-decoration: none;
+    }
+  }
+  .slide__info__scroll__lemon {
+    grid-row: 1/3;
+    width: 40px;
+    height: auto;
+    transform: rotate(310deg);
+    align-self: center;
+  }
+  .slide__info__scroll__arrow {
+    grid-column: 2/3;
+    width: 16px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  // ==========================================
+  //  + Slide Image
+  .slide__img-wrap {
+    width: 50%;
+  }
+  .slide__img-wrap__img {
+    width: 100%;
+  }
+}
