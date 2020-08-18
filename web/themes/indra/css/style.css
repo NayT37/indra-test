@@ -300,7 +300,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .p-sec-cont__title__pre, .h5, .h6, .p-sec-cont__title__suff {
+.h1, .h2, .h3, .h4, .p-sec-cont__title__pre, .h5, .h6, .p-sec-cont__title__suff, .landing .field--name-field-title {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -320,7 +320,7 @@ h4, .h4, .p-sec-cont__title__pre {
 h5, .h5 {
   font-size: 1.25rem; }
 
-h6, .h6, .p-sec-cont__title__suff {
+h6, .h6, .p-sec-cont__title__suff, .landing .field--name-field-title {
   font-size: 1rem; }
 
 .lead {
@@ -8660,7 +8660,7 @@ h5, .h5 {
   font-weight: bold;
   letter-spacing: 1.5px; }
 
-h6, .h6, .p-sec-cont__title__suff {
+h6, .h6, .p-sec-cont__title__suff, .landing .field--name-field-title {
   font-family: "formula-condensed", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
@@ -8848,31 +8848,73 @@ img {
       padding-bottom: 0.5rem; } }
 
 .mini-form__num-inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
   text-align: center; }
 
-.mini-form__num-inp__inp-wrapper {
-  margin-bottom: 30px; }
-  .mini-form__num-inp__inp-wrapper input {
-    width: 90%;
-    margin: 0;
-    padding: 30px 15px;
+.mini-form__num-inp__inp-wrapper input {
+  width: 90%;
+  margin: 0;
+  padding: 14px 15px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #000000;
+  border: none;
+  font-weight: bold;
+  font-size: 2.25rem; }
+  .mini-form__num-inp__inp-wrapper input::-webkit-input-placeholder {
     color: #ffffff;
-    text-align: center;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: #000000;
-    border: none;
-    font-weight: bold;
-    font-size: 2.25rem; }
+    font-family: "formula-condensed", sans-serif;
+    letter-spacing: 1.5px; }
+  .mini-form__num-inp__inp-wrapper input::-moz-placeholder {
+    color: #ffffff;
+    font-family: "formula-condensed", sans-serif;
+    letter-spacing: 1.5px; }
+  .mini-form__num-inp__inp-wrapper input:-ms-input-placeholder {
+    color: #ffffff;
+    font-family: "formula-condensed", sans-serif;
+    letter-spacing: 1.5px; }
+  .mini-form__num-inp__inp-wrapper input::-ms-input-placeholder {
+    color: #ffffff;
+    font-family: "formula-condensed", sans-serif;
+    letter-spacing: 1.5px; }
+  .mini-form__num-inp__inp-wrapper input::placeholder {
+    color: #ffffff;
+    font-family: "formula-condensed", sans-serif;
+    letter-spacing: 1.5px; }
+
+.mini-form__num-inp__label {
+  color: #ffffff;
+  font-family: "formula-condensed", sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem; }
 
 .mini-form__num-inp__feedback {
   display: none;
-  color: #ff0000; }
+  padding: 0.25rem 0.5625rem;
+  color: #ff0000;
+  font-family: "formula-condensed", sans-serif;
+  font-size: 0.875rem;
+  text-align: left;
+  letter-spacing: 1.5px; }
 
 .input-error .mini-form__num-inp__feedback {
-  text-align: left;
   display: block; }
+
+.mini-form__cta {
+  margin-top: 8px; }
 
 .p-slider {
   margin-bottom: 2rem; }
@@ -9034,6 +9076,30 @@ img {
     letter-spacing: 1.1px; }
   .p-sec-cont__content p:last-of-type {
     margin-bottom: 0; }
+
+.landing {
+  height: 81vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .landing .field--name-field-image {
+    max-width: 450px;
+    margin: 2rem auto 4rem; }
+  .landing .field--name-field-title {
+    margin-bottom: 2rem; }
+  .landing .field--name-field-sufix {
+    margin: 2rem auto;
+    color: #ffffff; }
 
 .mini-form {
   max-width: 620px;

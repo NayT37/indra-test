@@ -8,5 +8,6 @@ global-scripts:
     'https://unpkg.com/swiper/swiper-bundle.min.js': { type: external }
     'js/age-validation.js': {}
     'js/slider.js': {}
+    'js/local-age-validation.js': {}
   dependencies:
     - core/jquery
