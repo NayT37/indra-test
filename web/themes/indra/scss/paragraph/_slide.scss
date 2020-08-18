@@ -4,6 +4,7 @@
 //  + General
 //  + Slide Information
 //  + Slide Image
+//  [ Responsive ]
 
 // ==========================================
 
@@ -61,6 +62,7 @@
   width: 80%;
 }
 
+//  [ Responsive ]
 @media (min-width: $breakpoint-medium) {
   //  + General
   .p-slider {

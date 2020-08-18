@@ -1,10 +1,16 @@
 // Override bootstrap framework variables.
 // Full list of variables in [path to themes/contrib]/bootstrap4/dist/bootstrap/4.4.1/scss/_variables.scss
 // or [path to themes/contrib]/bootstrap4/scss/_theme_variables.scss.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   @extend .txt-default;
   color: $black-main;
+  line-height: 1;
   text-transform: uppercase;
   background-color: $yellow-main;
 }
