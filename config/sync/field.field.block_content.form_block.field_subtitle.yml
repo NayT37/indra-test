@@ -1,0 +1,21 @@
+uuid: c88fb0b7-fc2f-4b7b-8960-01f255cb711b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.form_block
+    - field.storage.block_content.field_subtitle
+  module:
+    - text
+id: block_content.form_block.field_subtitle
+field_name: field_subtitle
+entity_type: block_content
+bundle: form_block
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
