@@ -1,0 +1,8 @@
+uuid: 9763db43-e99a-46e3-8a7a-d5da57c75b84
+langcode: en
+status: true
+dependencies: {  }
+id: form_block
+label: 'Form Block'
+revision: 0
+description: 'Block with title, subtitle and form.'

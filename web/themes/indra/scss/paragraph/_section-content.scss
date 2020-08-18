@@ -1,0 +1,80 @@
+// Slide paragraph styles.
+
+/// INDEX
+//  + General
+//  + Section Title
+//  + Section Subtitle
+
+// ==========================================
+//  + General
+.p-sec-cont {
+  background-color: $black-main;
+  color: $white-main;
+  text-align: center;
+  padding: 8rem 0;
+
+  .ind-container {
+    max-width: 600px;
+  }
+}
+
+// ==========================================
+//  + Section Title
+.p-sec-cont__title {
+  margin-bottom: pxToRem(32px);
+}
+
+.p-sec-cont__title__pre {
+  @extend .h4;
+  line-height: 1;
+}
+.p-sec-cont__title__main {
+  font-size: 80px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+}
+.p-sec-cont__title__suff {
+  @extend .h6;
+  color: $yellow-main;
+  line-height: 1;
+}
+
+// ==========================================
+//  + Section Subtitle
+.p-sec-cont__sub-title {
+  margin-bottom: pxToRem(16px);
+  font-family: "formula-condensed", sans-serif;
+  font-size: pxToRem(20px);
+  font-weight: normal;
+  letter-spacing: 1.1px;
+}
+
+// ==========================================
+//  + Section Content
+.p-sec-cont__content {
+  ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0 0 pxToRem(32px) pxToRem(8px);
+    li {
+      margin: 0 pxToRem(2px);
+    }
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
+  p {
+    margin-bottom: pxToRem(32px);
+    &:first-of-type {
+      font-family: "formula-condensed", sans-serif;
+      font-size: pxToRem(20px);
+      font-weight: normal;
+      letter-spacing: 1.1px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+// Slide paragraph styles.
+
+/// INDEX
+//  + General
+//  + Title
+//  + Sub-title
+//  + Form
+//  [ Responsive ]
+
+// ==========================================
+//  + General
+.b-form-reg {
+  max-width: 660px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+// ==========================================
+//  + Title
+.b-form-reg__title {
+  text-align: center;
+}
+// ==========================================
+//  + Sub-title
+.b-form-reg__sub-title {
+  @extend .txt-default;
+  color: $white-main;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+// ==========================================
+//  + Form
+.b-form-reg__form {
+  margin-top: pxToRem(64px);
+
+  .form-item {
+    margin-top: 0;
+  }
+
+  input,
+  select {
+    color: $black-main;
+    font-family: "futura", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none;
+  }
+
+  .form-item-marketing {
+    margin-top: 0;
+  }
+
+  .form-item-terms-conditions,
+  .form-item-marketing {
+    display: flex;
+    font-family: "formula-condensed", sans-serif;
+    letter-spacing: 1.1px;
+    line-height: 1.5;
+
+    .description {
+      margin-left: pxToRem(15px);
+      font-size: pxToRem(16px);
+    }
+
+    a {
+      font-family: "formula-condensed", sans-serif;
+      text-decoration: underline;
+    }
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+
+  .webform-button--submit {
+    min-width: pxToRem(150px);
+    padding: pxToRem(6px) pxToRem(12px);
+    color: $yellow-main;
+    font-size: pxToRem(17px);
+    background-color: $black-main;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+//  [ Responsive ]
+@media (min-width: $breakpoint-medium) {
+  .b-form-reg__form {
+    .webform-elements {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: pxToRem(30px);
+    }
+
+    .form-item-marketing {
+      grid-column: 1 / 2;
+    }
+
+    .form-actions {
+      grid-column: 2 / 3;
+      grid-row: 5 / span 2;
+      align-self: center;
+      justify-self: end;
+      text-align: initial;
+    }
+  }
+}

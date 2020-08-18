@@ -1,0 +1,33 @@
+uuid: a96e35cf-5739-4f1c-a556-bd6e443030d5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:form_block:bc43d2d1-ecc2-4909-a1eb-36604d8cc176'
+  module:
+    - block_content
+    - node
+  theme:
+    - indra
+id: formregister
+theme: indra
+region: content
+weight: 10
+provider: null
+plugin: 'block_content:bc43d2d1-ecc2-4909-a1eb-36604d8cc176'
+settings:
+  id: 'block_content:bc43d2d1-ecc2-4909-a1eb-36604d8cc176'
+  label: 'Form Register'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
