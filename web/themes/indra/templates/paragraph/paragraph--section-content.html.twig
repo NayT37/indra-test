@@ -1,13 +1,18 @@
 {% set bg_image = content.field_image['#items'].entity.uri.value %}
 
-<div id="{{content.field_id_attribute.0}}" style="background-image: url({{ file_url(bg_image) }})">
+{# <div class="p-sec-cont" id="{{content.field_id_attribute.0}}" style="background-image: url({{ file_url(bg_image) }})"> #}
+<div class="p-sec-cont" id="{{content.field_id_attribute.0}}">
   <div class="ind-container">
-    {{content.field_title.0}}
-    {{content.field_title_prefix.0}}
-    {{content.field_title_suffix.0}}
-    {{content.field_subtitle.0}}
-
-    {{content.field_content.0}}
+    <h4 class="p-sec-cont__title">
+      <p class="p-sec-cont__title__pre 72 75 40">{{content.field_title_prefix.0}}</p>
+      <p class="p-sec-cont__title__main">{{content.field_title.0}}</p>
+      <p class="p-sec-cont__title__suff">{{content.field_title_suffix.0}}</p>
+    </h4>
+    <p class="p-sec-cont__sub-title">
+      {{content.field_subtitle.0}}
+    </p>
+    <div class="ind-format p-sec-cont__content">
+      {{content.field_content.0}}
+    </div>
   </div>
-
 </div>
