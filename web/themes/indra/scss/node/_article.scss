@@ -1,0 +1,50 @@
+.page-node-type-article {
+  background-color: $black-main;
+  color: $white-main;
+  text-transform: none;
+
+  ul {
+    margin-left: pxToRem(40px);
+    margin-bottom: pxToRem(16px);
+    ul {
+      margin-left: pxToRem(60px);
+    }
+  }
+
+  .menu-item {
+    a {
+      color: $yellow-main;
+    }
+  }
+}
+
+.field--name-body {
+  @extend .ind-container;
+}
+
+h2 {
+  font-size: pxToRem(20px);
+  color: $yellow-main;
+  margin-bottom: pxToRem(16px);
+}
+
+p {
+  margin-bottom: pxToRem(16px);
+}
+
+strong {
+  color: $yellow-main;
+  margin-bottom: pxToRem(16px);
+}
+
+.field--name-field-title {
+  text-align: center;
+  background: $yellow-main;
+  color: $black-main;
+  padding: pxToRem(16px);
+  margin-bottom: pxToRem(64px);
+  font-size: pxToRem(40px);
+  font-family: "formula-condensed", sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}

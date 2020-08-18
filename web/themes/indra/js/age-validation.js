@@ -14,9 +14,9 @@
             if (!$input.is(':valid') || currentVal === '') {
               maxVal = $input.attr('max')
               minVal = $input.attr('min');
-              if (currentVal > maxVal) $input.val(maxVal);
-              if (currentVal < minVal && currentVal !== '') $input.val(minVal);
               $parent.addClass('input-error');
+              if (currentVal > maxVal) {$input.val(maxVal); $parent.removeClass('input-error');}
+              if (currentVal < minVal && currentVal !== '') $input.val(minVal);
             } else {
               $parent.removeClass('input-error');
             }

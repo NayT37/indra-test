@@ -8618,7 +8618,7 @@ a.tabledrag-handle .handle {
   font-family: "futura";
   src: url("../fonts/FuturaMediumBT.ttf") format("truetype"); }
 
-.ind-container, .ind-head .region-header, .ind-footer .region-footer {
+.ind-container, .ind-head .region-header, .ind-footer .region-footer, .field--name-body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px; }
@@ -9029,7 +9029,7 @@ img {
   color: #ffffff;
   text-align: center;
   padding: 8rem 0; }
-  .p-sec-cont .ind-container, .p-sec-cont .ind-head .region-header, .ind-head .p-sec-cont .region-header, .p-sec-cont .ind-footer .region-footer, .ind-footer .p-sec-cont .region-footer {
+  .p-sec-cont .ind-container, .p-sec-cont .ind-head .region-header, .ind-head .p-sec-cont .region-header, .p-sec-cont .ind-footer .region-footer, .ind-footer .p-sec-cont .region-footer, .p-sec-cont .field--name-body {
     max-width: 600px; }
 
 .p-sec-cont__title {
@@ -9100,6 +9100,41 @@ img {
   .landing .field--name-field-sufix {
     margin: 2rem auto;
     color: #ffffff; }
+
+.page-node-type-article {
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: none; }
+  .page-node-type-article ul {
+    margin-left: 2.5rem;
+    margin-bottom: 1rem; }
+    .page-node-type-article ul ul {
+      margin-left: 3.75rem; }
+  .page-node-type-article .menu-item a {
+    color: #ffd100; }
+
+h2 {
+  font-size: 1.25rem;
+  color: #ffd100;
+  margin-bottom: 1rem; }
+
+p {
+  margin-bottom: 1rem; }
+
+strong {
+  color: #ffd100;
+  margin-bottom: 1rem; }
+
+.field--name-field-title {
+  text-align: center;
+  background: #ffd100;
+  color: #000000;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  font-family: "formula-condensed", sans-serif;
+  font-weight: bold;
+  margin-top: 20px; }
 
 .mini-form {
   max-width: 620px;
