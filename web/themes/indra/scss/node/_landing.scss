@@ -1,0 +1,22 @@
+.landing {
+  height: 81vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .field--name-field-image {
+    max-width: 450px;
+    margin: 2rem auto 4rem;
+  }
+
+  .field--name-field-title {
+    @extend .h6;
+    margin-bottom: pxToRem(32px);
+  }
+
+  .field--name-field-sufix {
+    margin: 2rem auto;
+    color: $white-main;
+  }
+}

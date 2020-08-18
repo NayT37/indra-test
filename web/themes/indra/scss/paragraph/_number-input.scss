@@ -1,13 +1,16 @@
 .mini-form__num-inp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   text-align: center;
 }
 
 .mini-form__num-inp__inp-wrapper {
-  margin-bottom: 30px;
   input {
     width: 90%;
     margin: 0;
-    padding: 30px 15px;
+    padding: 14px 15px;
     color: $white-main;
     text-align: center;
     appearance: none;
@@ -15,17 +18,37 @@
     border: none;
     font-weight: bold;
     font-size: 2.25rem;
+    &::placeholder {
+      color: $white-main;
+      font-family: "formula-condensed", sans-serif;
+      letter-spacing: 1.5px;
+    }
   }
+}
+
+.mini-form__num-inp__label {
+  color: $white-main;
+  font-family: "formula-condensed", sans-serif;
+  font-size: pxToRem(32px);
+  margin-top: pxToRem(32px);
 }
 
 .mini-form__num-inp__feedback {
   display: none;
+  padding: pxToRem(4px) pxToRem(9px);
   color: $red;
+  font-family: "formula-condensed", sans-serif;
+  font-size: pxToRem(14px);
+  text-align: left;
+  letter-spacing: 1.5px;
 }
 
 .input-error {
   .mini-form__num-inp__feedback {
-    text-align: left;
     display: block;
   }
+}
+
+.mini-form__cta {
+  margin-top: 8px;
 }

@@ -4,7 +4,7 @@
 <div class="mini-form__num-inp">
   <div class="mini-form__num-inp__inp-wrapper">
     <input type="number" 
-    placeholder="00"
+    placeholder="{{content.field_placeholder.0}}"  
     {% if content.field_min_value.0 != null %} 
       min="{{content.field_min_value.0}}" 
     {% endif %} 
@@ -16,15 +16,9 @@
     {% endif %} >
   </div>
 
+  <p class="mini-form__num-inp__feedback"> {{'El valor introducido no es válido'|t}}</p>
+
   {% if labelName != null %}
     <p class="mini-form__num-inp__label">{{ labelName }}</p>
-  {% endif %}
-
-  {% if content.field_min_value.0 != null and content.field_max_value.0 == null %}
-    <p class="mini-form__num-inp__feedback">Por favor seleccione un número mayor que {{content.field_min_value.0}}</p>
-  {% elseif content.field_min_value.0 == null and content.field_max_value.0 != null %}
-    <p class="mini-form__num-inp__feedback">Por favor seleccione un número menor que {{content.field_max_value.0}}</p>
-  {% elseif content.field_min_value.0 != null and content.field_max_value.0 != null %}
-    <p class="mini-form__num-inp__feedback">Por favor seleccione un número entre {{content.field_max_value.0}} y {{content.field_min_value.0}}</p>
   {% endif %}
 </div>
